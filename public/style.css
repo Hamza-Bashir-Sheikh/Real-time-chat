@@ -72,18 +72,40 @@ textarea::placeholder {
   color: #eeeeee;
 }
 
-button#sendButton {
+button#emojiButton,
+button#sendButton,
+label#attachButton {
   border: none;
   background: none;
   margin-left: 10px;
   cursor: pointer;
 }
 
-button#sendButton img {
+button#emojiButton img,
+button#sendButton img,
+label#attachButton img {
   height: 50px;
   width: 50px;
   border: 2px solid #222831;
   border-radius: 50%;
+}
+
+button#emojiButton img:hover{
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 15px 3px #f1c40f, 0 4px 6px 3px #f39c12;
+}
+
+button#sendButton img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 15px 3px #3498db, 0 4px 6px 3px #2980b9;
+}
+
+label#attachButton img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 15px 3px #9b59b6, 0 4px 6px 3px #8e44ad;
 }
 
 /* Custom scrollbar for WebKit browsers */

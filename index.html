@@ -15,12 +15,19 @@
       </div>
       <div class="message__area"></div>
       <div class="input__area">
+        <label for="fileInput" id="attachButton">
+          <img src="/attach.png" alt="Attach" />
+        </label>
         <textarea
           id="textarea"
           cols="30"
           rows="1"
           placeholder="Write a message..."
         ></textarea>
+        <button id="emojiButton">
+          <img src="/emoji-removebg-preview.png" alt="Emoji" />
+        </button>
+        <input type="file" id="fileInput" style="display: none" />
         <button id="sendButton">
           <img src="/send.png" alt="Send" />
         </button>
